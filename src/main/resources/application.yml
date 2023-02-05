@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: local
+    include: oauth
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/awstest
+    username: root
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
+
+server:
+  servlet:
+    encoding:
+      force: true
+
+  port: 8081
