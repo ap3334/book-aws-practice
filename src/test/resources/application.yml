@@ -1,15 +1,15 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/awstest
-    username: root
-    password:
-    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:tcp://localhost/~/awstest
+#    username: root
+#    password:
+#    driver-class-name: org.h2.Driver
   session:
       store-type: jdbc
 
   jpa:
     hibernate:
-      ddl-auto: update
+#      ddl-auto: update
     properties:
       hibernate:
         #        show_sql: true
